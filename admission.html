@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admission Form - Mount Zion School</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <img src="images/school_logo.jpg" alt="Mount Zion Logo" style="height: 80px; margin-bottom: 10px;" />
+    <h1>Mount Zion School</h1>
+    <p class="subtitle">School of Excellence</p>
+
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="admission.html">Admission</a>
+      <a href="contact.html">Contact</a>
+      <a href="dashboard.html">Dashboard</a>
+    </nav>
+  </header>
+
+  <!-- Admission Form Section -->
+<section class="form-section">
+    <h2>Admission Form</h2>
+    <p>Please fill in your details below to apply for admission.</p>
+  
+    <form action="#" method="POST" enctype="multipart/form-data" class="admission-form">
+      <label for="name">Student's Full Name</label>
+      <input type="text" id="name" name="name" required>
+  
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" name="dob" required>
+  
+      <label for="class">Class Applying For</label>
+      <select id="class" name="class" required>
+        <option value="">-- Select Class --</option>
+        <option value="1st">1st</option>
+        <option value="2nd">2nd</option>
+        <option value="3rd">3rd</option>
+        <option value="4th">4th</option>
+        <option value="5th">5th</option>
+        <option value="6th">6th</option>
+        <option value="7th">7th</option>
+        <option value="8th">8th</option>
+        <option value="9th">9th</option>
+        <option value="10th">10th</option>
+        <option value="11th">11th</option>
+        <option value="12th">12th</option>
+      </select>
+  
+      <label for="father">Father's Name</label>
+      <input type="text" id="father" name="father" required>
+  
+      <label for="phone">Contact Number</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="10-digit mobile number">
+  
+      <label for="email">Email Address (optional)</label>
+      <input type="email" id="email" name="email">
+  
+      <label for="address">Residential Address (optional)</label>
+      <textarea id="address" name="address" rows="3"></textarea>
+  
+      <label for="marksheet">Upload Last Year's Marksheet (PDF or Image)</label>
+      <input type="file" id="marksheet" name="marksheet" accept=".pdf,.jpg,.jpeg,.png" required>
+  
+      <button type="submit" class="btn">Submit Application</button>
+    </form>
+  </section>
+  
+
+  <!-- Footer -->
+  <footer style="background-color: #0a3abf; color: white; text-align: center; padding: 20px 0; margin-top: 40px;">
+    <p>© 2025 Mount Zion School | Follow us on social media</p>
+    <div style="margin-top: 10px;">
+      <a href="https://www.facebook.com/Mt.ZionNmh" target="_blank" style="margin: 0 10px;">
+        <img src="images/facebook.png" alt="Facebook" style="height: 24px; width: 24px;" />
+      </a>
+      <a href="https://www.instagram.com/mountzionschool1" target="_blank" style="margin: 0 10px;">
+        <img src="images/instagram.png" alt="Instagram" style="height: 24px; width: 24px;" />
+      </a>
+    </div>
+  </footer>
+
+<!-- Custom Popup Modal -->
+<div id="popup" class="popup-overlay">
+  <div class="popup-box">
+    <h3>🎉 Application Submitted Successfully!</h3>
+    <p>
+      Please note, this is only an online submission.<br>
+      You must visit the school office to complete your enrollment.
+    </p>
+    <button onclick="closePopup()" class="popup-btn">OK</button>
+  </div>
+</div>
+
+<script>
+  const form = document.querySelector('.admission-form');
+  const popup = document.getElementById('popup');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault(); // Stop default submission
+    popup.style.display = 'flex'; // Show popup
+    form.reset(); // Optional: reset form
+  });
+
+  function closePopup() {
+    popup.style.display = 'none';
+  }
+</script>
+
+
+</body>
+</html>

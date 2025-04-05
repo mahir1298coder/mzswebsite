@@ -1,0 +1,379 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+
+.header {
+  background: linear-gradient(to right, #1e3a8a, #3b82f6);
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.subtitle {
+  font-style: italic;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.navbar {
+  margin-top: 10px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 14px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  text-align: center;
+  background: #e0f2fe;
+  padding: 40px 20px;
+}
+
+.hero h2 {
+  color: #1d4ed8;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #374151;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: #2563eb;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #1d4ed8;
+}
+
+.features {
+  background: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.features h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.card {
+  background: #f9fafb;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  width: 220px;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.card p {
+  font-size: 13px;
+  color: #6b7280;
+  margin-top: 6px;
+}
+
+.message {
+  background: #f1f5f9;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.message p {
+  font-style: italic;
+  color: #374151;
+  margin: 10px 0;
+}
+
+.message strong {
+  display: block;
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.gallery a {
+  display: block;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.03);
+}
+
+.about-card {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  line-height: 1.8;
+  font-size: 16px;
+  color: #333;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.about-card h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #2e5fa3;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+}
+
+/* ✅ UPDATED FOOTER CSS BELOW */
+footer {
+  background-color: #0a3abf;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 40px;
+  border-top: 3px solid #fff;
+}
+
+footer p {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+footer a {
+  margin: 0 12px;
+  display: inline-block;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+footer a:hover {
+  transform: scale(1.1);
+  filter: brightness(130%);
+}
+
+footer img {
+  height: 26px;
+  width: 26px;
+  filter: brightness(100%);
+}
+
+.form-section {
+  padding: 40px 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.admission-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.admission-form label {
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+.admission-form input,
+.admission-form textarea,
+.admission-form select {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.admission-form button.btn {
+  margin-top: 25px;
+  width: fit-content;
+  align-self: center;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contact-form button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #0a3abf;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contact-form button:hover {
+  background-color: #072f9e;
+}
+
+/* 📌 Popup styles */
+.popup-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.popup-box {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.popup-box h3 {
+  margin-top: 0;
+  color: #0a3abf;
+}
+
+.popup-box p {
+  font-size: 15px;
+  margin: 10px 0 20px;
+}
+
+.popup-btn {
+  padding: 10px 20px;
+  background-color: #0a3abf;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup-btn:hover {
+  background-color: #072f95;
+}
+
+/* 📌 Form styles */
+.form-section {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.admission-form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.admission-form input,
+.admission-form select,
+.admission-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.admission-form .btn {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: #0a3abf;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.admission-form .btn:hover {
+  background-color: #072f95;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
